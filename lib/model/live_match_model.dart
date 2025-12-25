@@ -14,8 +14,9 @@ class LiveMatch {
   final Color textColors;
   final DecorationImage backgroundImage;
   bool onTheWinner;
-// i have create a simple data model for this video
-// all the source code link is  in description
+  final int week;
+  // i have create a simple data model for this video
+  // all the source code link is  in description
   LiveMatch({
     required this.awayGoal,
     required this.homeGoal,
@@ -34,6 +35,7 @@ class LiveMatch {
     required this.textColors,
     required this.onTheWinner,
     required this.backgroundImage,
+    required this.week,
   });
 }
 
@@ -61,6 +63,7 @@ List<LiveMatch> liveMatches = [
     yelloCard: 6,
     redCard: 5,
     corner: 12,
+    week: 13,
   ),
   LiveMatch(
     awayGoal: 1,
@@ -85,6 +88,7 @@ List<LiveMatch> liveMatches = [
     yelloCard: 5,
     redCard: 1,
     corner: 8,
+    week: 14,
   ),
   LiveMatch(
     awayGoal: 0,
@@ -109,6 +113,7 @@ List<LiveMatch> liveMatches = [
     yelloCard: 2,
     redCard: 2,
     corner: 4,
+    week: 15,
   ),
   LiveMatch(
     awayGoal: 2,
@@ -133,5 +138,6 @@ List<LiveMatch> liveMatches = [
     yelloCard: 3,
     redCard: 1,
     corner: 8,
+    week: 16,
   ),
 ];
