@@ -34,7 +34,6 @@ class _AppMainScreenState extends State<AppMainScreen> {
         height: 80,
         decoration: BoxDecoration(
           color: Colors.white,
-
           boxShadow: [
             BoxShadow(
               color: Colors.black12.withOpacity(0.015),
