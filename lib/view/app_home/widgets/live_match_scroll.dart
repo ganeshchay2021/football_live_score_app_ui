@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:football_live_score_app/constant/constant.dart';
 import 'package:football_live_score_app/model/live_match_model.dart';
+import 'package:football_live_score_app/view/match_details/match_details_screen.dart';
 
 class LiveMatchScroll extends StatelessWidget {
   const LiveMatchScroll({super.key, required this.liveMatch});
@@ -10,7 +11,12 @@ class LiveMatchScroll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MatchDetailsScreen(liveMatch: liveMatch,)),
+        );
+      },
       child: Container(
         margin: EdgeInsets.only(right: 20),
         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
